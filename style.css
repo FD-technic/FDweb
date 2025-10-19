@@ -1,11 +1,14 @@
 /* Světlé téma */
 :root,
 [data-bs-theme="light"] {
-  --bs-primary:   #5f89b6;
-  --bs-secondary: #83a5c0;
+  --bs-primary: #c8d2dc;
+  --bs-primary-rgb: 200, 210, 220;
+  --bs-secondary:   #8ea0ad;
+  --bs-secondary-rgb: 142, 160, 173;
   --bs-success:   #6ecf3d;
   --bs-info:      #bf99df;
-  --bs-warning:   #FFB703;
+  --bs-warning:   #ef6603;
+  --bs-warning-rgb: 239, 102, 3;
   --bs-danger:    #C1121F;
   --bs-light:     #fff6f6;
   --bs-dark:      #343A40;
@@ -66,13 +69,17 @@ nav {
 
 .btn-outline-warning {
   font-size: 1.5rem;
-  font-weight: bold;
+  color: black;
+  font-weight: normal;
   border-width: 3px;
   border-radius: 10px;
 }
 
 .btn-outline-warning:hover {
   font-weight: normal;
-  padding: 5px 12px;
   border-radius: 15px;
+}
+
+header {
+  background-color: var(--bs-primary);
 }
